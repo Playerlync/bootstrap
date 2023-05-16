@@ -1,3 +1,11 @@
+# Fork notes
+This fork is created specifically to address the [Popover API](https://chromestatus.com/feature/5463833265045504) conflict with the popover component from version 0.12.1 of this library for AngularJS 1.2. Version 0.14 of the original library has these changes but requires AngularJS 1.3. The only change from the original repository is the addition of the 0.12.2+ versions which pull in some changes from the 0.14+ version of the library.
+
+Usage differs from [the original 0.12.1 API](https://angular-ui.github.io/bootstrap/versioned-docs/0.12.1/) in the following ways:
+- Use: `uib-popover` instead of `popover`.
+- Use: `uib-popover-template` instead of `popover-template`.
+- Use: `uib-popover-html` instead of `popover-html`.
+ 
 # bootstrap - [AngularJS](http://angularjs.org/) directives specific to [Bootstrap](http://getbootstrap.com)
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/angular-ui/bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
