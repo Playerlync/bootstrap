@@ -67,17 +67,11 @@ module.exports = function(grunt) {
         dest: '<%= dist %>/<%= filename %>-tpls-<%= pkg.version %>.js'
       },
       dist_bower: {
-        options: {
-          banner: '<%= meta.banner %><%= meta.modules %>\n'
-        },
-        src: [], //src filled in by build task
+        src: ['<%= concat.dist.dest %>'], //src filled in by build task
         dest: '<%= dist %>-bower/<%= filename %>.js'
       },
       dist_bower_tpls: {
-        options: {
-          banner: '<%= meta.banner %><%= meta.all %>\n<%= meta.tplmodules %>\n'
-        },
-        src: [], //src filled in by build task
+        src: ['<%= concat.dist_tpls.dest %>'], //src filled in by build task
         dest: '<%= dist %>-bower/<%= filename %>-tpls.js'
       }
     },
@@ -117,11 +111,11 @@ module.exports = function(grunt) {
         dest:'<%= dist %>/<%= filename %>-tpls-<%= pkg.version %>.min.js'
       },
       dist_bower:{
-        src:['<%= concat.dist.dest %>'],
+        src:['<%= concat.dist_bower.dest %>'],
         dest:'<%= dist %>-bower/<%= filename %>.min.js'
       },
       dist_bower_tpls:{
-        src:['<%= concat.dist_tpls.dest %>'],
+        src:['<%= concat.dist_bower_tpls.dest %>'],
         dest:'<%= dist %>-bower/<%= filename %>-tpls.min.js'
       }
     },
