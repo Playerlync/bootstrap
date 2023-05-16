@@ -3,8 +3,6 @@ This fork is created specifically to address the [Popover API](https://chromesta
 
 Usage differs from [the original 0.12.1 API](https://angular-ui.github.io/bootstrap/versioned-docs/0.12.1/) in the following ways:
 - Use: `uib-popover` instead of `popover`.
-- Use: `uib-popover-template` instead of `popover-template`.
-- Use: `uib-popover-html` instead of `popover-html`.
  
 # bootstrap - [AngularJS](http://angularjs.org/) directives specific to [Bootstrap](http://getbootstrap.com)
 
